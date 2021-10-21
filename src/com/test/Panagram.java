@@ -6,7 +6,7 @@ public class Panagram {
 	}
 
 	public static String pangrams(String s) {
-		s = s.replaceAll("\\s", "");
+		s = s.toUpperCase().replaceAll("\\s", "");
 
 		if (s.chars().distinct().count() == 26) {
 			s = "pangram";
